@@ -1,0 +1,25 @@
+<%- include("./partials/header"); %>
+<div class="container">
+    <form action="/send" method="POST">
+        <div class="form-group">
+            <Label for="senderName">Sender</Label>
+            <select id="senderName" class="form-select custom-select" aria-label="Default select example" name="sender">
+                <option value=<%= foundcust._id %>><%= foundcust.name %> ,Balance: <%= foundcust.balance %></option>
+              </select>        
+        </div>
+        <div class="form-group">
+            <Label for="receiverName">Receiver Name</Label>
+            <select id="senderName" class="form-select custom-select" aria-label="Default select example" name="receiver">
+                <% customers.forEach(function(customer){ %>
+                    <option value=<%= customer._id %>><%= customer.name %> ,Balance: <%= customer.balance %></option>    
+                <% }) %>
+            </select>        
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="text" class="form-control" name="amount" placeholder="Amount">
+        </div>
+        <button type="submit" class="btn btn-primary">Send Money</button>
+    </form>
+</div>
+<%- include("./partials/footer"); %>
