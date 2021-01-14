@@ -27,7 +27,8 @@ app.use(function(req, res, next){
     next();
 });
 // customers.insertMany(
-//     [{
+//     [
+    // {
 //         name:"Aniket Lodh",
 //         email:"a@gmail.com",
 //         balance: 5000
@@ -47,11 +48,42 @@ app.use(function(req, res, next){
 //         email:"k@gmail.com",
 //         balance: 5000
 //     },
-//     {
+    // {
+    //     name:"Bhavna Chatterjee",
+    //     email:"b@gmail.com",
+    //     balance: 5000
+    // },
+        // { 
+        //     name:"Dhruv Bannerjee",
+        //     email:"dhruv@gmail.com",
+        //     balance: 6000
+        // },
+        // {
+        //     name:"Kabir Sarkar",
+        //     email:"kabir@gmail.com",
+        //     balance: 2000
+        // },
+        // {
+        //     name:"Riya Chatterjee",
+        //     email:"riya@gmail.com",
+        //     balance: 3500
+        // },
+        // {
+        //     name:"George Bannerjee",
+        //     email:"george@gmail.com",
+        //     balance: 4000
+        // },
+        // {
+        //     name:"Rabi Chakraborty",
+        //     email:"rabi@gmail.com",
+        //     balance: 5000
+        // }
+    // {
 //         name:"Bhavna Chatterjee",
 //         email:"b@gmail.com",
 //         balance: 5000
-//     }],function(err,docs){
+//     }
+//         ],function(err,docs){
 //         console.log("success");
 //     }
 // )
